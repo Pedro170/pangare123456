@@ -1,0 +1,48 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.padding {
+  padding: 100px 1rem;
+}
+
+.button-principal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: .9rem;
+  width: max-content;
+  border: none;
+  border-radius: 30px;
+  font: 400 1rem/1.2 "Righteous", sans-serif;
+  text-transform: uppercase;
+  padding: .4rem .4rem .4rem 1.8rem;
+  cursor: pointer;
+}
+
+.button-principal::after {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+    padding-inline: 2rem;    
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-inline: 1rem;    
+  }
+
+  .padding {
+    padding: 50px 1rem;
+  }
+}

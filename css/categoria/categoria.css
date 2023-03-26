@@ -1,0 +1,18 @@
+.categorias-bg {
+  margin-bottom: 100px;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+@media ( max-width: 800px ) {
+  .categorias {
+    grid-template-columns: repeat(5, 1fr);
+    gap: .5rem;
+    border: none;
+    padding: 0 1rem;
+  }
+}

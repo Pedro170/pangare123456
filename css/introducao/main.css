@@ -1,0 +1,11 @@
+.main h1 {
+  margin-bottom: 1.5rem;
+}
+
+.main p {
+  max-width: 90ch;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+}

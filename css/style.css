@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('global/global.css');
+@import url('global/header.css');
+@import url('global/footer.css');
+
+@import url('ultilitarios/tipografia.css');
+@import url('ultilitarios/components.css');
+@import url('ultilitarios/cores.css');
+
+
+@import url('introducao/main.css');
+@import url('categoria/categoria.css');
+@import url('conteudo/conteudo.css');
