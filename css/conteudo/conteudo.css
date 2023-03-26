@@ -4,6 +4,10 @@
   padding: 6.125rem 0;
 }
 
+.informacoes-bg:nth-child(odd) {
+  background: #ddd;
+}
+
 .informacoes-bg:nth-child(1) {
   position: relative;
   background: linear-gradient(
@@ -45,6 +49,9 @@
   left: 40px;
   width: 44px;
   height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .informacoes-bg::after {
@@ -124,6 +131,7 @@
   width: 100%;
   text-transform: uppercase;
   text-align: center;
+  user-select: none;
 }
 
 .numero {
@@ -281,4 +289,9 @@
     font-size: 1.1rem;
     margin-top: -10px;
   }
+
+  /* .informacoes-bg::before,
+  .informacoes-bg::after {
+    width: 40px;
+  } */
 }

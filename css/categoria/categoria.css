@@ -1,5 +1,19 @@
 .categorias-bg {
-  margin-bottom: 100px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.categorias-bg::before {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 44px;
+  height: 32px;
+  background: url("../../images/dec-externa.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .categorias {
@@ -8,17 +22,29 @@
   gap: 1rem;
 }
 
-@media ( max-width: 800px ) {
+@media (max-width: 800px) {
   .categorias {
     grid-template-columns: repeat(5, 1fr);
-    gap: .5rem;
+    gap: 0.5rem;
     border: none;
     padding: 0 1rem;
   }
 }
 
-@media ( max-width: 600px ) {
+@media (max-width: 800px) {
+  .categorias-bg::before {
+    bottom: 30px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
   .categorias-bg {
-    margin-bottom: 50px;
+    padding-bottom: 100px;
+  }
+
+  .categorias-bg::before {
+    bottom: 20px;
+    left: 20px;
   }
 }
