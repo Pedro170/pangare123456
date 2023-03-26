@@ -1,10 +1,11 @@
 .informacoes-bg {
   position: relative;
   min-height: 400px;
-  padding: 3.125rem 0;
+  padding: 6.125rem 0;
 }
 
-#agentes-culturais {
+.informacoes-bg:nth-child(1) {
+  position: relative;
   background: linear-gradient(
     135deg,
     var(--cor-v-gradient-01),
@@ -12,7 +13,7 @@
   );
 }
 
-#atividades-espacos {
+.informacoes-bg:nth-child(2) {
   background: linear-gradient(
     135deg,
     var(--cor-l-gradient-01),
@@ -20,7 +21,7 @@
   );
 }
 
-#calendario-ventos {
+.informacoes-bg:nth-child(3) {
   background: linear-gradient(
     135deg,
     var(--cor-y-gradient-01),
@@ -28,12 +29,59 @@
   );
 }
 
-#empresas-cultura {
+.informacoes-bg:nth-child(4) {
   background: linear-gradient(
     135deg,
     var(--cor-a-gradient-01),
     var(--cor-a-gradient-02)
   );
+}
+
+.informacoes-bg::before,
+.informacoes-bg::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 44px;
+  height: 32px;
+}
+
+.informacoes-bg::after {
+  top: initial;
+  left: initial;
+  right: 40px;
+  bottom: 40px;
+}
+
+.informacoes-bg:nth-child(even)::before {
+  right: 40px;
+  left: initial;
+}
+
+.informacoes-bg:nth-child(even)::after {
+  left: 40px;
+  right: initial;
+}
+
+.informacoes-bg:nth-child(1)::before,
+.informacoes-bg:nth-child(1)::after {
+  background: url("../../images/dec-verde.svg");
+}
+
+.informacoes-bg:nth-child(2)::before,
+.informacoes-bg:nth-child(2)::after {
+  background: url("../../images/dec-purple.svg");
+}
+
+.informacoes-bg:nth-child(3)::before,
+.informacoes-bg:nth-child(3)::after {
+  background: url("../../images/dec-amarelo.svg");
+}
+
+.informacoes-bg:nth-child(4)::before,
+.informacoes-bg:nth-child(4)::after {
+  background: url("../../images/dec-azul.svg");
 }
 
 .informacoes {
@@ -80,7 +128,7 @@
 
 .numero {
   position: absolute;
-  top: 25px;
+  top: 70px;
   right: 7rem;
   display: flex;
   align-items: center;
@@ -122,7 +170,7 @@
   .numero {
     top: initial;
     right: 4rem;
-    bottom: 25px;
+    bottom: 80px;
   }
 }
 
@@ -151,6 +199,27 @@
   .numero p small {
     font-size: 1.3rem;
   }
+
+  .informacoes-bg::before,
+  .informacoes-bg::after {
+    top: 30px;
+    left: 30px;
+  }
+
+  .informacoes-bg::after {
+    top: initial;
+    left: initial;
+    right: 30px;
+    bottom: 30px;
+  }
+
+  .informacoes-bg:nth-child(even)::before {
+    right: 30px;
+  }
+
+  .informacoes-bg:nth-child(even)::after {
+    left: 30px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -166,10 +235,32 @@
     padding: 0.5rem 1.5rem;
     font: 500 1rem/1.3 "Roboto", sans-serif;
   }
+
+  .informacoes-bg::before,
+  .informacoes-bg::after {
+    top: 20px;
+    left: 20px;
+  }
+
+  .informacoes-bg::after {
+    top: initial;
+    left: initial;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .informacoes-bg:nth-child(even)::before {
+    right: 20px;
+  }
+
+  .informacoes-bg:nth-child(even)::after {
+    left: 20px;
+  }
 }
 
 @media (max-width: 500px) {
   .info-links {
+    gap: 0.5rem;
     width: 70%;
   }
 

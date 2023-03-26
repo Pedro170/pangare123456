@@ -15,8 +15,10 @@
   width: max-content;
   border: none;
   border-radius: 30px;
+  background: var(--cor-02);
   font: 400 1rem/1.2 "Righteous", sans-serif;
   text-transform: uppercase;
+  color: var(--cor-01);
   padding: .4rem .4rem .4rem 1.8rem;
   cursor: pointer;
 }
