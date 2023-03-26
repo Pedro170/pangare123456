@@ -103,7 +103,6 @@
   margin-top: -20px;
 }
 
-
 @media (max-width: 1200px) {
   .titulo-bg {
     font-size: 6rem;
@@ -145,7 +144,6 @@
     margin-top: -8px;
   }
 
-
   .numero p span {
     font-size: 2.5rem;
   }
@@ -156,7 +154,6 @@
 }
 
 @media (max-width: 600px) {
-
   .logo p:first-child {
     font-size: 1.3rem;
   }
@@ -182,7 +179,7 @@
 
   .numero .box-image {
     width: 20px;
-    margin-top: -6px;
+    margin-top: -15px;
   }
 
   .numero p span {
