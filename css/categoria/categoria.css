@@ -1,3 +1,118 @@
+/* .categorias-bg {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.categorias-bg::before {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 44px;
+  height: 32px;
+  background: url("../../images/dec-externa.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  gap: 1rem;
+}
+
+.categorias li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: solid 6px;
+  box-shadow: inset 4px 0 0 rgba(0, 0, 0, 0.2),
+    inset -3px -1px 0 rgba(0, 0, 0, 0.1), inset -1px 1px 0 rgba(0, 0, 0, 0.1),
+    4px 4px 7px #657a81;
+  font-size: 1.2rem;
+}
+
+.categorias li:nth-child(1) a {
+  background: linear-gradient(135deg, #5a1c60, #ba44c6);
+  color: #5a1c60;
+}
+.categorias li:nth-child(2) a {
+  background: linear-gradient(135deg, #111ab0, #767cdc);
+  color: #111ab0;
+}
+.categorias li:nth-child(3) a {
+  background: #269d73;
+  color: #269d73;
+}
+.categorias li:nth-child(4) a {
+  background: #46b1db;
+  color: #46b1db;
+}
+.categorias li:nth-child(5) a {
+  background: #dc5132;
+  color: #dc5132;
+}
+.categorias li:nth-child(6) a {
+  background: #077896;
+  color: #077896;
+}
+.categorias li:nth-child(7) a {
+  background: #932e96;
+  color: #932e96;
+}
+
+@media (max-width: 1200px) {
+  .categorias li a {
+    width: 100px;
+    height: 100px;
+  }
+
+  .categorias li a img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .categorias-bg::before {
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .categorias {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    border: none;
+    padding: 0 1rem;
+  }
+
+  .categorias li a {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .categorias-bg {
+    padding-bottom: 100px;
+  }
+
+  .categorias-bg::before {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .categorias {
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+    padding: 0 1rem;
+  }
+} */
+
 .categorias-bg {
   position: relative;
   padding-bottom: 100px;
