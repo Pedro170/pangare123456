@@ -43,13 +43,19 @@ h2 {
   width: 20ch;
 }
 
-.time {
+[data-semana]::after {
+  content: '';
   display: inline-block;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   border: solid 2px var(--cor-01);
   background: #f00;
+}
+
+[data-semana].aberto::after {
+  background: #3f4;
+  /* background: #52a391; */
 }
 
 .footer-item:nth-child(3) ul {
