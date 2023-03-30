@@ -18,6 +18,8 @@ function initFuncionamento() {
   }
 }
 
+initFuncionamento()
+
 function initAnimaNumeros() {
   const numeros = document.querySelectorAll("[data-numero]");
 

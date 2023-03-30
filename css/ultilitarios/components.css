@@ -35,6 +35,10 @@
   transition: 0.3s;
 }
 
+.col-02 {
+  grid-column: 1/-1;
+}
+
 .button-principal:hover::after {
   background: linear-gradient(
     45deg,
@@ -86,15 +90,15 @@
     height: 32px;
     border-radius: 50%;
     background: linear-gradient(
-    45deg,
-    #7a13c6,
-    #fb38ff,
-    #fc60ff,
-    #b44fff,
-    #fc60ff,
-    #a23cee,
-    #b44fff
-  );
+      45deg,
+      #7a13c6,
+      #fb38ff,
+      #fc60ff,
+      #b44fff,
+      #fc60ff,
+      #a23cee,
+      #b44fff
+    );
     background-size: 600%;
     animation: animate 10s infinite;
     transition: 0.3s;
