@@ -1,10 +1,43 @@
 #cadastro .header-bg {
-  z-index: -1;
-  box-shadow: 0px 140px 0px 0px #000;
+  position: relative;
 }
 
-#cadastro .header-bg .logo {
-  z-index: 1;
+#cadastro .header-bg::before {
+  content: '';
+  position: absolute;
+  top: 148px;
+  left: 0;
+  width: 100%;
+  height: 290px;
+  background: #000;
+}
+
+#cadastro .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logado {
+  display: flex;
+  align-items: center;
+  column-gap: 0.9rem;
+  width: max-content;
+  border-radius: 30px;
+  background: #333;
+  padding: 0.4rem 0.4rem 0.4rem 1.5rem;
+  font: 400 1rem/1.2 "Righteous", sans-serif;
+  color: #fff;
+}
+
+.logado span {
+  text-transform: uppercase;
+}
+
+.logado img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
 }
 
 .form {
